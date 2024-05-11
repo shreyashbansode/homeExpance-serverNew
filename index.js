@@ -4,7 +4,7 @@ const db = require('./db')
 const cors = require('cors')
 const dotenv = require('dotenv/config');
 
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 5000;
 
 db.connection.on('connected', (err) => {
     if (err) {
