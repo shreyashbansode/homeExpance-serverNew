@@ -20,7 +20,10 @@ Mongoose.connect(DBurl)
         else {
             console.log("Failed to connect to database")
         }
-    });
+    })
+    .catch((err) => {
+        console.log(err)
+    })
 
 
 app.listen(PORT, () => {
